@@ -13,9 +13,25 @@ before(async () => {
 });
 
 test('builds the core company profile pages', () => {
-  for (const p of ['index.html', 'solutions.html', 'about.html', 'news.html', 'contact.html']) {
+  for (const p of ['index.html', 'solutions.html', 'about.html', 'careers.html', 'news.html', 'contact.html']) {
     assert.ok(pages.includes(p), `${p} should be built`);
   }
+});
+
+test('careers page presents benefits, open roles and an application link', () => {
+  for (const p of pages) {
+    assert.match(html[p], /<a href="careers\.html"(?: aria-current="page")?>Careers<\/a>/, `${p} should link to Careers`);
+  }
+  const careers = html['careers.html'];
+  assert.match(careers, /href="careers\.html" aria-current="page"/);
+  assert.match(careers, /Why work at Contoso/);
+  for (const benefit of ['Meaningful work', 'Learning budget', 'Hybrid work']) {
+    assert.ok(careers.includes(benefit), `Careers page should describe ${benefit}`);
+  }
+  for (const role of ['Cloud Engineer', 'Cloud Engineering', 'Jakarta', 'Security Analyst', 'Security Operations', 'Surabaya', 'Data Engineer', 'Data &amp; AI', 'Singapore']) {
+    assert.ok(careers.includes(role), `Careers page should include ${role}`);
+  }
+  assert.match(careers, /href="mailto:careers@contoso\.com"/);
 });
 
 test('every page has a title and exactly one h1', () => {

@@ -14,6 +14,7 @@
     { "page": "index", "href": "index.html", "label": "Home" },
     { "page": "solutions", "href": "solutions.html", "label": "Solutions" },
     { "page": "about", "href": "about.html", "label": "About us" },
+    { "page": "careers", "href": "careers.html", "label": "Careers" },
     { "page": "news", "href": "news.html", "label": "Newsroom" },
     { "page": "contact", "href": "contact.html", "label": "Contact" }
   ],
