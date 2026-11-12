@@ -1,0 +1,42 @@
+{
+  "title": "Careers at Contoso",
+  "description": "Discover the benefits, teams and open roles at Contoso.",
+  "hero": {
+    "eyebrow": "Careers at Contoso",
+    "heading": "Build technology that makes a difference",
+    "lead": "Bring your curiosity and expertise to teams designing, securing and operating technology together."
+  },
+  "why": {
+    "eyebrow": "Life at Contoso",
+    "heading": "Why work at Contoso",
+    "benefits": [
+      {
+        "title": "Meaningful work",
+        "text": "Solve practical technology challenges with teams building secure, reliable digital services."
+      },
+      {
+        "title": "Learning budget",
+        "text": "Use a dedicated learning budget to grow your skills and deepen your craft."
+      },
+      {
+        "title": "Hybrid work",
+        "text": "Balance focused remote work with time together in our regional offices."
+      }
+    ]
+  },
+  "roles": {
+    "eyebrow": "Open roles",
+    "heading": "Find your next opportunity",
+    "items": [
+      { "title": "Cloud Engineer", "team": "Cloud Engineering", "location": "Jakarta" },
+      { "title": "Security Analyst", "team": "Security Operations", "location": "Surabaya" },
+      { "title": "Data Engineer", "team": "Data & AI", "location": "Singapore" }
+    ]
+  },
+  "apply": {
+    "heading": "Ready to build what's next?",
+    "text": "Send your resume and the role you're interested in to our fictional Contoso careers inbox.",
+    "email": "careers@contoso.com",
+    "linkLabel": "Apply by email"
+  }
+}
